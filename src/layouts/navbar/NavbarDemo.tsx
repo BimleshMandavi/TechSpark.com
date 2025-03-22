@@ -23,7 +23,7 @@ export function NavbarDemo({ className }: { className?: string }) {
                 <HoveredLink href="/branding">Branding</HoveredLink>
               </div>
             </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="HIRE">
+            <MenuItem setActive={setActive} active={active} item="BLOG">
               <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                 <ProductItem
                   title="Algochurn"
@@ -67,18 +67,11 @@ export function NavbarDemo({ className }: { className?: string }) {
                 <HoveredLink href="/enterprise">Enterprise</HoveredLink>
               </div>
             </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="CASE STUDIES">
-              <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/hobby">Hobby</HoveredLink>
-                <HoveredLink href="/individual">Individual</HoveredLink>
-                <HoveredLink href="/team">Team</HoveredLink>
-                <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-              </div>
+            <MenuItem  item="CASE STUDIES">
+             
             </MenuItem>
-            <MenuItem setActive={setActive} active={active} item="ABOUT US">
-              <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/hobby">Hobby</HoveredLink>
-              </div>
+            <MenuItem  item="ABOUT US">
+             
             </MenuItem>
           </div>
         </div>

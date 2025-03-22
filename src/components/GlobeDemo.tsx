@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World), {
   ssr: false,
@@ -423,13 +424,15 @@ export function GlobeDemo() {
               </li>
               <li>Elevate Your Brand with Stunning UI/UX.</li>
             </motion.ul>
-            <motion.button
-              className="bg-[#1600ea] hover:bg-blue-500 rounded-sm text-white font-bold py-2 px-6 mt-4 sm:mt-0 cursor-pointer"
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              Get Started Today
-            </motion.button>
+            <Link href="/contact">
+              <motion.button
+                className="bg-[#1600ea] hover:bg-blue-500 rounded-sm text-white font-bold py-2 px-6 mt-4 sm:mt-0 cursor-pointer"
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
+                Get Started Today
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />

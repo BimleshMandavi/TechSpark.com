@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const transition = {
   type: "spring",
   mass: 0.5,
@@ -72,17 +73,26 @@ export const Menu = ({
       onMouseLeave={() => setActive(null)} // resets the state
       className="relative  border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-around space-x-4  py-6 "
     >
-      <div>LOGO</div>
+      <Link href="/">
+        {" "}
+        <Image
+          src="/Tech.png"
+          alt="Tech Spark Logo"
+          height={50}
+          width={50}
+          priority
+        />
+      </Link>
       <div className="hidden md:flex"> {children}</div>
 
-      <div>
+      <Link href="/contact">
         <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
             Get Started
           </span>
         </button>
-      </div>
+      </Link>
     </nav>
   );
 };

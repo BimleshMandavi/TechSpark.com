@@ -56,7 +56,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="my-5 mx-5 md:mr-10">
-        <Link className="cursor-pointer" href="#">
+        <Link className="cursor-pointer" href="/contact">
           <button className="bg-[#FF7F0E] text-white px-4 py-2 rounded-md shadow-md cursor-pointer">
             Get Started
           </button>

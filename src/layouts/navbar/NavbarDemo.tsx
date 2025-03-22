@@ -67,10 +67,10 @@ export function NavbarDemo({ className }: { className?: string }) {
                 <HoveredLink href="/enterprise">Enterprise</HoveredLink>
               </div>
             </MenuItem>
-            <MenuItem  item="CASE STUDIES">
+            <MenuItem setActive={setActive} active={active} item="CASE STUDIES">
              
             </MenuItem>
-            <MenuItem  item="ABOUT US">
+            <MenuItem setActive={setActive} active={active} item="ABOUT US">
              
             </MenuItem>
           </div>

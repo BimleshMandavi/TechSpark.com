@@ -255,7 +255,7 @@ const FooterPage = () => {
               Server Management
             </Link>
           </div>
-          <div className="flex flex-col justify-between items-start gap-5 flex-wrap">
+          {/* <div className="flex flex-col justify-between items-start gap-5 flex-wrap">
             <h1 className="text-[18px] Poppins">Join Newsletter</h1>
             <div className="flex flex-col items-start">
               <input
@@ -267,7 +267,7 @@ const FooterPage = () => {
             <button className="text-[18px] font-semibold Inter  bg-[#0C487B] hover:bg-white hover:text-red-500 w-[138px] sm:w-full h-[54px] text-center rounded cursor-pointer">
               Subscribe
             </button>
-          </div>
+          </div> */}
         </div>
         <hr />
         <div className="flex justify-evenly items-center pt-10">

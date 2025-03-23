@@ -129,6 +129,8 @@ const ContactPage = () => {
 
           <div className="mt-5">
             <Image
+            width={500}
+            height={300}
               src="/contactImg/img.jpg"
               alt="Contact Image"
               className="w-full h-60 object-cover shadow-lg"
@@ -153,6 +155,8 @@ const ContactPage = () => {
             {/* Images Section */}
             <div className="pt-5">
               <Image
+              width={100}
+              height={100}
                 src="/contactImg/userloveus.jpg"
                 alt="User Love Us"
                 className="w-25 h-25 object-cover "
@@ -180,6 +184,8 @@ const ContactPage = () => {
         {/* Left Section - Image */}
         <div className="w-full md:w-1/2">
         <Image
+        width={500}
+        height={300}
           src="/contactImg/support.jpg"
           alt="Customer Support"
           className="rounded-sm object-cover w-full h-80 md:h-[400px]"
@@ -217,6 +223,8 @@ const ContactPage = () => {
             {/* Left Side - Illustration */}
             <div className="w-full md:w-1/2 ml-60 md:ml-0">
               <Image
+              width={500}
+              height={300}
                 src="/contactImg/newsletter.jpg"
                 alt="Newsletter Illustration"
                 className="max-w-full h-auto"
